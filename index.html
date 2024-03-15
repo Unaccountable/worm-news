@@ -12,19 +12,38 @@
 
   <meta name="description" content="" />
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪱</text></svg>">
+  <link rel="icon" href="resources/1FAB1.svg">
 
   <style>
+    .test {
+    /*background-color: #2a0f01;*/
+    background-image: url('/resources/dirt.bmp');}
     body {
-    background-color: #2a0f01;
+      background-image: 
+        url('/resources/grass.bmp'), /* Top background */
+        url('/resources/dirt.bmp'); /* Bottom background */
+    background-repeat: repeat-x, repeat; /* Repeat horizontally for grass block, repeat both horizontally and vertically for dirt */
+    background-position: top left, top left; /* Align the top backgrounds to the top left */
+    background-size: auto, auto; /* Auto width, fixed height for grass block, auto width and height for dirt */
+}
     }
+  
   </style>
 
 </head>
 
 <body>
 
-    <h1 style="position: fixed; top: 50%; left: 50%; font-size: xxx-large;">🪱</h1>
+    <img src="/resources/1FAB1_color.png" style="width: auto; height: auto; top: 20%; left: 50%; position: absolute; transform: translateX(-50%)" alt="pink worm">
+    <h2 style="position: absolute; top: 55%; left: 50%; transform: translateX(-50%); font-size: xxx-large; color:antiquewhite;">
+      <script>
+        const months = ["Worms Will Become Paralyzed if Exposed to Light for Too Long", "Worms Breath Through Their Skin and Have No Lungs", "Worms Can Regenerate Some Segments of Their Body", "Worms Are Cold Blooded and Have 5 Hearts", "The Average Lifespan of A Worm Is About 2 Years, but They Can Live Up to as Long as 8 Years", "Worms Have Tiny Hairs on Each Segment", "Worms Are Hermaphrodite – Both Male and Female", "Adult Worms Have A Ring Called A Clitella", "Baby Worms Hatch From Cocoons", "The Giant Gippsland Earthworm Is the the Longest in the World, Reaching Up to 9.8 Ft (3m) Long – My Favorite Worm Facts", "Worms Digest Half of Their Body Weight on Average Each Day", "There Are About 6,000 Different Kinds of Earthworms", "Worms Are Older Than the Dinosaurs", "Worms Are 90% Water", "If Worms Eat Too Much Protein, They Can Appear Deformed"];
+
+const random = Math.floor(Math.random() * months.length);
+document.write(months[random]);
+      </script>
+    </h2>
+<p style="color: antiquewhite; position: absolute; bottom: 0; left: 1;">Temporarily stolen from https://wormfarmguru.com/amazing-worm-facts/ & Minecraft</p>
 
 </body>
 
